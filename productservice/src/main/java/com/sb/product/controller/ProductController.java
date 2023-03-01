@@ -14,6 +14,7 @@ import com.sb.product.model.Products;
 import com.sb.product.repos.ProductRepository;
 
 @RestController
+@RequestMapping("/productapi")
 public class ProductController {
 	
 	@Autowired
