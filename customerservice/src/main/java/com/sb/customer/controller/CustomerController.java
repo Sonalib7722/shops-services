@@ -20,6 +20,8 @@ public class CustomerController {
 	@Autowired
 	CustomerRepository repository;
 	
+	
+	//Get the customerlist
 	@RequestMapping(value="/getcustomers",method=RequestMethod.GET)
 	public List<Customers> getCustomerList() {
 		return repository.findAll();
