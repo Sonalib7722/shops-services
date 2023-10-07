@@ -21,7 +21,7 @@ public class CustomerController {
 	CustomerRepository repository;
 	
 	
-	//Get the customerlist
+	//Get the customer  list
 	@RequestMapping(value="/getcustomers",method=RequestMethod.GET)
 	public List<Customers> getCustomerList() {
 		return repository.findAll();
